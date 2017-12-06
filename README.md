@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<style>
@@ -12,8 +11,8 @@
 		<?php
 			$servername = "localhost";
 			$username = "root";
-			$password = "PRpEcJBlcDwt6Amy";
-			$dbname = "paybyqr";
+			$password = "";
+			$dbname = "db_nanu";
 
 			// Create connection
 			$conn = new mysqli($servername, $username, $password, $dbname);
@@ -34,7 +33,7 @@
 				// output data of each row
 				while($row = $result->fetch_assoc()) 
 				{
-					echo "<tr><td>".$row["transaction_id"]."</td><td>".$row["invoice_id"]."</td></tr>";
+					echo "<tr><td>".$row["nim"]."</td><td>".$row["nama"]."</td></tr>";
 				}
 				echo "</table>";
 			} 
