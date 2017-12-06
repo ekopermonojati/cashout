@@ -22,7 +22,7 @@
 				die("Connection failed: " . $conn->connect_error);
 			} 
 		
-			$sql = "select * from transaction";
+			$sql = "select * from tbl_siswa";
 			$result = $conn->query($sql);
 			
 			echo "it is done";
