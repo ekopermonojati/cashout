@@ -45,7 +45,7 @@
 						echo "<table><tr><th>merchant_name</th><th>merchant_outlet_name</th><th>merchant_contact_phone</th><th>net_balance</th><th>director_name</th><th>director_identity_id</th></tr>";	
 						while($row = $result->fetch_assoc()) 
 						{
-							echo "<tr><td>".$row["merchant_name"]."</td><td>".$row["merchant_outlet_name"]."</td><td>".$row["merchant_contact_phone"]."</td><td>".$row["net_balance"]."</td><td>".$row["director_name"]."</td><td>".$row["director_identity_id"]."</td></tr>"."<td><input type='submit' name='submit' value='Cash out'></td>";
+							echo "<tr><td>".$row["merchant_name"]."</td><td>".$row["merchant_outlet_name"]."</td><td>".$row["merchant_contact_phone"]."</td><td>".$row["net_balance"]."</td><td>".$row["director_name"]."</td><td>".$row["director_identity_id"]."</td></tr>"."<td><button type='button'>Click Me!</button></td>";
 						}
 						echo "</table>";
 					} 
