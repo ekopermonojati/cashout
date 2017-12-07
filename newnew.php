@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<?php
-			$servername = "localhost";
+			$servername = "mysql:3306";
 			$username = "root";
 			$password = "PRpEcJBlcDwt6Amy";
 			$dbname = "paybyqr";
