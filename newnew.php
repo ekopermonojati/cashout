@@ -42,10 +42,10 @@
 
 					if ($result->num_rows > 0) 
 					{
-						echo "<table><tr><th>merchant_name</th><th>merchant_outlet_name</th><th>merchant_contact_phone</th><th>net_balance</th><th>director_name</th><th>director_identity_id</th></tr>";	
+						echo "<table><tr><th>merchant_name</th><th>merchant_outlet_name</th><th>merchant_pic_name</th><th>merchant_contact_phone</th><th>net_balance</th><th>director_name</th><th>director_identity_id</th><th></th></tr>";	
 						while($row = $result->fetch_assoc()) 
 						{
-							echo "<tr><td>".$row["merchant_name"]."</td><td>".$row["merchant_outlet_name"]."</td><td>".$row["merchant_contact_phone"]."</td><td>".$row["net_balance"]."</td><td>".$row["director_name"]."</td><td>".$row["director_identity_id"]."</td></tr>"."<td><button type='button'>Click Me!</button></td>";
+							echo "<tr><td>".$row["merchant_name"]."</td><td>".$row["merchant_outlet_name"]."</td><td>".$row["merchant_pic_name"]."</td><td>".$row["merchant_contact_phone"]."</td><td>".$row["net_balance"]."</td><td>".$row["director_name"]."</td><td>".$row["director_identity_id"]."</td></tr>"."<td><button type='button'>Cash out</button></td>";
 						}
 						echo "</table>";
 					} 
