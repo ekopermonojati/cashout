@@ -124,7 +124,7 @@
 			<td>".$row["closing_time"]."</td>
 			<td>".$row["registered_date"]."</td>
 			<td>
-				<form action=cashout.php?data=".$row['merchant_id'].">
+				<form action=cashout2.php?data=".$row['merchant_id'].">
 					<input type='submit' name='cashout' value=".$row['merchant_id'].">
 				</form>
 			</td></tr>";	
