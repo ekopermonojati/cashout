@@ -51,7 +51,7 @@
 	{
 		die("Connection failed: " . $conn->connect_error);
 	} 			
-	$sql = "select * from transaction";
+	$sql = "select * from merchant";
 	$result = $conn->query($sql);			
 	if ($result->num_rows > 0) 
 	{
