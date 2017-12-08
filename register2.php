@@ -105,7 +105,7 @@
 			die("Connection failed: " . $conn->connect_error);
 		} 			
 		$ppword=md5($pword);
-		$sql = "INSERT INTO tbl_login (username,password) VALUES ('$uname','$ppword')";
+		$sql = "INSERT INTO user (username,password) VALUES ('$uname','$ppword')";
 
 		if ($conn->query($sql) === TRUE) 
 		{
