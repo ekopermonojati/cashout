@@ -80,7 +80,7 @@
 		<form  class="center" action="" method=post>
 			<b>USERNAME:</b> <input  name="username" type="text"><br>
 			<b>PASSWORD:</b> <input  name="password" type="password"><br>
-			<a href="pw.php">back</a><br>
+			<a href="pw2.php">back</a><br>
 			<b><input class="button" type="submit" value="Register" name="SubmitButton"></b><br>
 		</form>
 	</body>
