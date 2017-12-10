@@ -116,6 +116,7 @@
 		$subtracted_gross=$gross_balance-$subtract;
 		
 		$sql2 = "update merchant set net_balance='$subtracted', gross_balance='$subtracted_gross' where merchant_id='$id'";
+		echo "$sql2";
 		$result2 = $conn->query($sql2);
 		
 		$sql3 = "insert into cashout (merchant_id,jml_cashout,agen) values('$id','$subtract','$agen')";
