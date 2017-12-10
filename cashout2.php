@@ -107,7 +107,7 @@
 		$subtract=$_POST['subtract'];
 		$id=$_GET["cashout"];
 		
-		$sql=mysqli_query($conn,"select net_balance from merchant where merchant_id='$id'");
+		$sql=mysqli_query($conn,"select net_balance,gross_balance from merchant where merchant_id='$id'");
 		$result=mysqli_fetch_array($sql);
 		
 		$net_balance=$result['net_balance'];
